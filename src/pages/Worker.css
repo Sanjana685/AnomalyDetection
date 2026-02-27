@@ -1,0 +1,49 @@
+.worker-container {
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.worker-header {
+  background-color: #2a5298;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.worker-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.normal {
+  color: green;
+  font-weight: bold;
+}
+.worker-header {
+  background-color: #2a5298;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background: white;
+  color: #2a5298;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}

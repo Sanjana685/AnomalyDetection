@@ -1,0 +1,53 @@
+.supervisor-container {
+  min-height: 100vh;
+  background-color: #eef2f7;
+}
+
+.supervisor-header {
+  background-color: #1e3c72;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.supervisor-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.normal {
+  color: green;
+  font-weight: bold;
+}
+
+.alert-card li {
+  color: red;
+}
+.supervisor-header {
+  background-color: #1e3c72;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background: white;
+  color: #1e3c72;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
