@@ -1,27 +1,41 @@
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "./Worker.css";
 
 function Worker() {
-  const navigate = useNavigate();
+  const [location, setLocation] = useState("Machine Area A");
+  const [reading, setReading] = useState(0);
+  const [anomaly, setAnomaly] = useState(false);
 
-  const handleLogout = () => {
-    navigate("/");
+  const generateReading = () => {
+    const randomReading = Math.floor(Math.random() * 100);
+    setReading(randomReading);
+
+    if (randomReading > 70) {
+      setAnomaly(true);
+    } else {
+      setAnomaly(false);
+    }
   };
 
   return (
     <div className="worker-container">
-      <header className="worker-header">
+      <div className="worker-card">
         <h2>Worker Dashboard</h2>
-        <button className="logout-btn" onClick={handleLogout}>
-          Logout
-        </button>
-      </header>
 
-      <div className="worker-content">
-        <div className="card">
-          <h3>Machine Status</h3>
-          <p>Status: <span className="normal">Normal</span></p>
-        </div>
+        <p><strong>Location:</strong> {location}</p>
+
+        <p><strong>Current Reading:</strong> {reading}</p>
+
+        <p>
+          <strong>Anomaly Detected:</strong>{" "}
+          <span className={anomaly ? "yes" : "no"}>
+            {anomaly ? "YES ⚠️" : "NO ✅"}
+          </span>
+        </p>
+
+        <button onClick={generateReading}>
+          Generate New Reading
+        </button>
       </div>
     </div>
   );

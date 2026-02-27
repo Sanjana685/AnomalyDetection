@@ -1,6 +1,40 @@
 .worker-container {
   min-height: 100vh;
   background-color: #f4f6f9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef2f7;
+}
+
+.worker-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+.worker-card button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #2a5298;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.yes {
+  color: red;
+  font-weight: bold;
+}
+
+.no {
+  color: green;
+  font-weight: bold;
+}
 }
 
 .worker-header {
@@ -46,4 +80,32 @@
   padding: 6px 12px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.worker-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+.worker-card button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #2a5298;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.yes {
+  color: red;
+  font-weight: bold;
+}
+
+.no {
+  color: green;
+  font-weight: bold;
 }

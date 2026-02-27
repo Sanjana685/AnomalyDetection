@@ -1,6 +1,8 @@
 .supervisor-container {
   min-height: 100vh;
   background-color: #eef2f7;
+  padding: 40px;
+  text-align: center;
 }
 
 .supervisor-header {
@@ -8,6 +10,12 @@
   color: white;
   padding: 15px;
   text-align: center;
+  background-color: #1e3c72;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .supervisor-content {
@@ -17,6 +25,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 
 .card {
   background: white;
@@ -34,15 +43,6 @@
 .alert-card li {
   color: red;
 }
-.supervisor-header {
-  background-color: #1e3c72;
-  color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logout-btn {
   background: white;
   color: #1e3c72;
@@ -50,4 +50,31 @@
   padding: 6px 12px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background: #2a5298;
+  color: white;
+}
+
+.yes {
+  color: red;
+  font-weight: bold;
+}
+
+.no {
+  color: green;
+  font-weight: bold;
 }
