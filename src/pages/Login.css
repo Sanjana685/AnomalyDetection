@@ -3,29 +3,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-image: url("../assets/Image1.jpg");
+background-size: cover;
+background-position: center;
 }
 
 .login-card {
-  background: white;
+  background: rgb(96, 95, 100);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 75px;
   width: 300px;
   text-align: center;
 }
 
 .login-card h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .login-card select,
 .login-card button {
   width: 100%;
   padding: 8px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .login-card input {
   width: 100%;
   padding: 8px;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+.login-links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-links p {
+  margin: 5px 0;
+  color: #08090b;
+  cursor: pointer;
+}
+
+.login-links p:hover {
+  text-decoration: underline;
 }
